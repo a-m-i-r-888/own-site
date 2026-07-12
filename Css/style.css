@@ -332,7 +332,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 500px;
 }
 
 .second-section-content {
@@ -380,7 +379,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .second-section-content div div {
@@ -423,4 +422,116 @@ header {
   color: #4A5468;
   font-size: 15px;
   text-align: justify;
+}
+
+
+
+/* third section */
+
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F6FC;
+  padding: 50px 0px;
+  gap: 50px;
+}
+
+.third-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.third-section-content:nth-child(2) {
+  gap: 20px;
+}
+
+.third-section-content h2 {
+  color: var(--secondary--color--);
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.third-section-content p {
+  color: #4A5468;
+  font-size: 15px;
+}
+
+.third-section-content .box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* background-color: aqua; */
+}
+
+.third-section-content .box .box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  /* background-color: rgb(160, 115, 63); */
+  border: 1px solid #E4E9F3;
+  border-radius: 22px;
+  max-height: 392px;
+  overflow: hidden;
+}
+
+.box-content-img {
+  display: flex;
+  width: 100%;
+  height: 55%;
+  background-color: #08236B;
+}
+
+.box-content-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-content-dis {
+  padding: 24px 30px 30px 30px;
+  background-color: white;
+  width: 100%;
+  height: 45%;
+}
+
+.box-content-dis ul {
+  display: flex;
+  padding: 8px 15px 8px 15px;
+  list-style: none;
+  justify-self: start;
+}
+
+.box-content-dis h3 {
+  color: var(--secondary--color--);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.box-content-dis p {
+  color: #4A5468;
+  font-size: 14px;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.third-section-content button {
+  background-color: white;
+  padding: 15px 30px;
+  border: 1px solid #DCE7FE;
+  border-radius: 35px;
+  color: #12379A;
+  font-weight: bold;
+  font-size: 15px;
 }
