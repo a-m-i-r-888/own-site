@@ -120,6 +120,7 @@ header {
   border: none;
   border-radius: 30px;
   padding: 8px 35px 8px 25px;
+  width: 48px;
 }
 
 .bottom-header-content-right-up div .section-name .section-name-li {
@@ -362,7 +363,7 @@ header {
 .section-name-li {
   color: var(--primary--color--);
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .second-section-content h2 {
@@ -389,10 +390,11 @@ header {
   flex: 1;
   justify-content: center;
   align-items: start;
-  padding: 20px 25px;
+  padding: 10px 25px 15px;
   border: 1px solid #E4E9F3;
   border-radius: 22px;
   gap: 0;
+  height: 222.2px;
 }
 
 .second-section-content div div ul {
@@ -409,6 +411,7 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--primary--color--);
+  /* font-size: 130px; */
 }
 
 .second-section-content div div h3 {
