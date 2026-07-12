@@ -437,7 +437,6 @@ header {
   background-color: #F3F6FC;
   padding: 50px 0px;
   gap: 50px;
-  margin-bottom: 300px;
 }
 
 .third-section-content {
@@ -548,7 +547,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 500px;
-  padding: 0px 30px;
+  padding: 120px 30px;
 }
 
 .forth-section-content {
@@ -606,6 +605,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 20px 0px 0px;
 }
 
 .features-second-container {
