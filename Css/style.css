@@ -558,12 +558,14 @@ header {
 
 .forth-section-content-img {
   display: flex;
+  padding-top: 20px;
   width: 45%;
 }
 
 .forth-section-content-img img {
   width: 100%;
   height: auto;
+  max-height: 450px;
 }
 
 .forth-section-content-text {
@@ -655,7 +657,16 @@ header {
   color: #4A5468;
 }
 
+@media(max-width:992px) {
+  .forth-section-content-img {
+    padding: 70px 0px 0px;
+    width: 50%;
+  }
 
+  .forth-section-content-text {
+    width: 50%;
+  }
+}
 
 /* fifth section */
 
