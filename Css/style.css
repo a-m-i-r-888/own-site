@@ -826,3 +826,17 @@ header {
   font-size: 14px;
   font-weight: bold;
 }
+
+
+
+/* seventh section */
+
+
+.seventh-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 30px;
+  background-color: #F3F6FC;
+}
