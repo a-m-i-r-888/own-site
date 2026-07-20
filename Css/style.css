@@ -410,7 +410,7 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--primary--color--);
-  /* font-size: 130px; */
+  font-size: 19px;
 }
 
 .second-section-content div div h3 {
@@ -991,6 +991,7 @@ form textarea {
 .textarea {
   height: 120px;
   padding: 10px 12px;
+  resize: none;
 }
 
 .submit {
