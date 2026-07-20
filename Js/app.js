@@ -9,26 +9,8 @@ const goToSlide = function (num) {
   })
 }
 goToSlide(0)
-// const nextSlide = function () {
-//   if (number === totalSlide - getSlidesPerView()) number = 0;
-//   else number++;
-//   goToSlide(number);
-// }
-// const preSlide = function () {
-//   if (number === 0) number = totalSlide - getSlidesPerView();
-//   else number--;
-//   goToSlide(number);
-// }
-// make slider container's height responsive
 const p = slider.querySelectorAll('p');
 let paragraphHeight;
-// important
-// const getSlidesPerView = function () {
-//   if (window.innerWidth <= 576) return 3;
-//   if (window.innerWidth <= 768) return 4;
-//   if (window.innerWidth <= 992) return 5;
-//   return 6;
-// }
 const calcSliderHeight = function () {
   p.forEach(line => {
     paragraphHeight = getComputedStyle(line).height;
@@ -39,9 +21,7 @@ const calcSliderHeight = function () {
 }
 window.addEventListener('resize', function () {
   calcSliderHeight();
-  // getSlidesPerView();
 })
 window.addEventListener('load', function () {
   calcSliderHeight();
-  // getSlidesPerView();
 })
