@@ -461,6 +461,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 7px;
+  color: var(--primary--color--);
 }
 
 .team-social ul li a i {
