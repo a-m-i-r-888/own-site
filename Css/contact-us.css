@@ -22,6 +22,11 @@
   border-radius: 30px;
 }
 
+.active {
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
 /* top header */
 
 header {
