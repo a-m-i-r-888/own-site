@@ -568,6 +568,12 @@ header {
   height: 70%;
 }
 
+.profile img {
+  width: 100%;
+  border: none;
+  border-radius: 100%;
+}
+
 .dis {
   display: flex;
   flex-direction: row;
