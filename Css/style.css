@@ -80,7 +80,6 @@ header {
   padding: 11px 22px;
 }
 
-
 /* bottom header */
 
 .bottom-header-content {
@@ -141,6 +140,7 @@ header {
   color: #4A5468;
   text-align: justify;
   width: 290px;
+  line-height: 28px;
 }
 
 .bottom-header-content-right-up div:nth-child(2) {
@@ -199,11 +199,63 @@ header {
 
 
 
+.features-first-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0px 0px;
+}
+
+.features-second-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+}
+
+.icon-box {
+  display: flex;
+}
+
+.icon-box ul {
+  display: flex;
+  list-style: none;
+  background-color: #F1F5FF;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.icon-box ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--primary--color--);
+}
+
+.icon-box ul li i {
+  font-size: 20px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.features h3 {
+  color: var(--secondary--color--);
+  font-size: 16px;
+}
+
+.features p {
+  font-size: 15px;
+  color: #4A5468;
+}
 
 /* first section */
-
-
-
 
 .first-section {
   display: flex;
