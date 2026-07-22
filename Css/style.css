@@ -892,12 +892,14 @@ header {
   position: absolute;
   top: 54%;
   right: -6%;
+  outline: none;
 }
 
 .left-btn {
   position: absolute;
   top: 54%;
   left: -6%;
+  outline: none;
 }
 
 .sixth-section-content h2 {
