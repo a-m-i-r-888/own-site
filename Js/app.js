@@ -27,12 +27,14 @@ window.addEventListener('load', function () {
 
 
 // scroll to section
-document.querySelector('.top-header-nav').addEventListener('click', function (e) {
-  if (e.target.classList.contains('nav-link') && e.target.getAttribute('href').includes('section')) {
-    e.preventDefault()
-    const id = e.target.getAttribute('href');
-    if (id.includes('section'))
-      // document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
-      lenis.scrollTo(`#${id}`);
-  }
+document.querySelectorAll('.navbar').forEach(navbar => {
+  navbar.addEventListener('click', function (e) {
+    if (e.target.classList.contains('nav-link') && e.target.getAttribute('href').includes('section')) {
+      e.preventDefault()
+      const id = e.target.getAttribute('href');
+      if (id.includes('section'))
+        // document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+        lenis.scrollTo(`#${id}`);
+    }
+  })
 })
