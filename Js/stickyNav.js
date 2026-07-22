@@ -2,6 +2,7 @@
 const header = document.querySelector('header')
 const nav = document.querySelector('.top-header-content')
 const navHeight = nav.getBoundingClientRect().height;
+console.log(navHeight)
 const stickyNav = function (entries) {
   const [entry] = entries
   if (!entry.isIntersecting) nav.classList.add('sticky')
@@ -10,6 +11,6 @@ const stickyNav = function (entries) {
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMargin: `-${navHeight}px`
+  rootMargin: `${navHeight}px`
 });
 headerObserver.observe(header)
