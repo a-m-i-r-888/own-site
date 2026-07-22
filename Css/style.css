@@ -27,6 +27,17 @@
   text-decoration: underline !important;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  cursor: pointer;
+}
+
 /* top header */
 
 header {
