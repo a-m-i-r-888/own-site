@@ -70,6 +70,11 @@ const preSlide = function () {
 }
 rightBtn.addEventListener('click', nextSlide);
 leftBtn.addEventListener('click', preSlide);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowRight') nextSlide();
+  // else if (e.key === 'ArrowLeft') preSlide();
+  e.key === 'ArrowLeft' && preSlide();
+})
 // make slider container's height responsive
 const comments = document.querySelectorAll(".comment p");
 const userName = document.querySelectorAll(".user-information-container h3");
