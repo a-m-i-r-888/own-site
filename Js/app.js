@@ -1,6 +1,5 @@
 const slider = document.querySelector('.slider');
 const slide = document.querySelectorAll('.slide');
-console.log(document.querySelectorAll('.slide').length);
 let number = 0;
 const totalSlide = slide.length;
 const goToSlide = function (num) {
@@ -24,4 +23,15 @@ window.addEventListener('resize', function () {
 })
 window.addEventListener('load', function () {
   calcSliderHeight();
+})
+
+
+// scroll to section
+document.querySelector('.top-header-nav').addEventListener('click', function (e) {
+  if (e.target.classList.contains('nav-link') && e.target.getAttribute('href').includes('section')) {
+    e.preventDefault()
+    const id = e.target.getAttribute('href');
+    if (id.includes('section'))
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+  }
 })
