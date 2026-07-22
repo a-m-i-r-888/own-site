@@ -4,7 +4,6 @@ const nav = document.querySelector('.top-header-content')
 const navHeight = nav.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries
-  console.log(entry)
   if (!entry.isIntersecting) nav.classList.add('sticky')
   else nav.classList.remove('sticky')
 }

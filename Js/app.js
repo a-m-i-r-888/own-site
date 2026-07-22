@@ -37,7 +37,10 @@ document.querySelectorAll('.navbar').forEach(navbar => {
       const id = e.target.getAttribute('href');
       if (id.includes('section'))
         // document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
-        lenis.scrollTo(`#${id}`);
+        lenis.scrollTo(`#${id}`, {
+          offset: -111,
+          duration: 1.2
+        });
     }
   })
 })
@@ -112,22 +115,3 @@ window.addEventListener('load', function () {
   calcSliderHeight2();
   getSlidesPerView();
 })
-
-// const dotsContainer = document.querySelector('.dots');
-// const creatDots = function () {
-//   slide.forEach(function (_, i) {
-//     dotsContainer.insertAdjacentHTML('beforeend',
-//       `<button class="dots__dot" data-slide="${i}"></button>`)
-//   });
-// }
-// const activateDot = function (slide) {
-//   dotsContainer.querySelectorAll('.dots__dot').forEach(dot => dot.classList.remove('dots__dot--active'));
-//   dotsContainer.querySelector(`.dots__dot[data-slide = "${slide}"]`).classList.add('dots__dot--active')
-// }
-// dotsContainer.addEventListener('click', function (e) {
-//   if (e.target.classList.contains('dots__dot')) {
-//     const go = e.target.dataset.slide
-//     goToSlide(go);
-//     activateDot(go);
-//   }
-// })
