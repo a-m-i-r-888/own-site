@@ -1,7 +1,6 @@
 'use strict';
 
 const navHoverHandler = function (e) {
-  console.log('sdsadsadas')
   if (e.target.classList.contains('nav-link') & !e.target.classList.contains('active')) {
     const hovered = e.target
     const links = hovered.closest('.top-header-nav').querySelectorAll('.nav-link');
