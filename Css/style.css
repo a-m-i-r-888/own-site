@@ -61,6 +61,15 @@ html {
   box-shadow: 0 0 10px rgba(37, 99, 235, .5);
 }
 
+/* sticky nav*/
+.sticky {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 55;
+  background-color: #F3F6FC;
+}
+
 /* top header */
 
 header {
@@ -847,22 +856,48 @@ header {
   padding: 65px 30px;
 }
 
-.sixth-section-content {
+.sixth-section-content,
+.sixth-section-comments-container {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
 }
 
-.sixth-section-content:nth-child(1) {
+.sixth-section-content {
   flex-direction: column;
   padding: 32px 0px 0px;
 }
 
-.sixth-section-content:nth-child(2) {
+.sixth-section-comments-container {
   flex-direction: row;
   padding: 64px 0px 0px;
-  gap: 15px;
+  position: relative;
+  width: 95%;
+  /* height: 300px; */
+}
+
+.right-btn,
+.left-btn {
+  display: flex;
+  place-content: center;
+  border: 1px solid #E4E9F3;
+  border-radius: 100%;
+  background-color: #F3F6FC;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.right-btn {
+  position: absolute;
+  top: 54%;
+  right: -6%;
+}
+
+.left-btn {
+  position: absolute;
+  top: 54%;
+  left: -6%;
 }
 
 .sixth-section-content h2 {
@@ -870,31 +905,55 @@ header {
   font-size: 35px;
 }
 
-.sixth-section-content .comments-container {
+.comments-card-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* gap: 15px; */
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.comments-card {
   display: flex;
   flex-direction: column;
   border: none;
+  justify-content: space-between;
   border-radius: 35px;
   background-color: #F3F6FC;
   padding: 31px 32px 32px 32px;
   gap: 25px;
-  width: 33%;
+  width: 32%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: transform 1s;
 }
 
-.sixth-section-content .comments-container .comment {
+.comments-card .comment {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
 }
 
-.sixth-section-content .comments-container .comment p {
+.comments-card .comment p {
   color: #0B1220;
-  text-align: justify;
+  text-align: right;
   font-size: 16px;
+  display: -webkit-box;
+  /* lines number */
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
 }
 
-.sixth-section-content .comments-container .user-information-container {
+.comments-card .user-information-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -902,7 +961,7 @@ header {
   align-items: center;
 }
 
-.sixth-section-content .comments-container .user-information-container .profile-box {
+.comments-card .user-information-container .profile-box {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -914,24 +973,40 @@ header {
   border-radius: 100%;
 }
 
-.sixth-section-content .comments-container .user-information-container .information {
+.comments-card .user-information-container .information {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.sixth-section-content .comments-container .user-information-container .information h3 {
+.comments-card .user-information-container .information h3 {
   color: var(--secondary--color--);
   font-size: 16px;
+  display: -webkit-box;
+  /* lines number */
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.sixth-section-content .comments-container .user-information-container .information p {
+.comments-card .user-information-container .information p {
   color: #4A5468;
   font-size: 14px;
   font-weight: bold;
+  display: -webkit-box;
+  /* lines number */
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-
+@media(max-width:992px) {
+  .comments-card {
+    width: 48%;
+  }
+}
 
 /* seventh section */
 

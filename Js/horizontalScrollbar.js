@@ -1,4 +1,4 @@
-// horizontal scrollbar
+'use strict';
 
 const progressBar = document.querySelector('.scroll-progress');
 
