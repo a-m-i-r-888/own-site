@@ -47,6 +47,10 @@ html {
 }
 
 /* style horizontal scrollbar */
+header {
+  position: relative;
+}
+
 .scroll-progress {
   position: fixed;
   top: 0;
