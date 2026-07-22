@@ -32,6 +32,7 @@ document.querySelector('.top-header-nav').addEventListener('click', function (e)
     e.preventDefault()
     const id = e.target.getAttribute('href');
     if (id.includes('section'))
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+      // document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+      lenis.scrollTo(`#${id}`);
   }
 })
