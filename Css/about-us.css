@@ -47,9 +47,6 @@ html {
 }
 
 /* style horizontal scrollbar */
-header {
-  position: relative;
-}
 
 .scroll-progress {
   position: fixed;
@@ -65,12 +62,21 @@ header {
   box-shadow: 0 0 10px rgba(37, 99, 235, .5);
 }
 
+/* sticky nav*/
+header {
+  position: relative;
+}
+
 .sticky {
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100% !important;
   z-index: 55;
-  background-color: #F3F6FC;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
 }
 
 /* hover on nav links */
