@@ -148,6 +148,11 @@ header {
 
 .top-header-get-start button {
   padding: 11px 22px;
+  transition: background-color 0.6s;
+}
+
+.top-header-get-start button:hover {
+  background-color: #12379a;
 }
 
 /* bottom header */
@@ -228,6 +233,12 @@ header {
   justify-content: center;
   text-align: center;
   gap: 5px;
+  transition: background-color 0.6s;
+  font-size: 14px;
+}
+
+.bottom-header-content-right-up div button:hover {
+  background-color: #12379A;
 }
 
 /* arrow Icon */
@@ -237,6 +248,16 @@ header {
 
 .bottom-header-content-right-up div h4 a {
   color: var(--secondary--color--);
+  transition: 0.6s;
+}
+
+.bottom-header-content-right-up div h4 a:hover {
+  color: white;
+  background-color: var(--primary--color--);
+  padding: 7px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
 }
 
 .bottom-header-content-right-down {
@@ -432,6 +453,12 @@ header {
   gap: 5px;
   padding: 20px 35px;
   width: 100%;
+  transition: 0.6s;
+}
+
+.details-container div:hover {
+  border: 1.5px solid var(--primary--color--);
+  transform: scale(1.02);
 }
 
 .details-container div h3 {
@@ -517,6 +544,11 @@ header {
   gap: 0;
   height: 222.2px;
   background-color: white;
+  transition: border 0.6s;
+}
+
+.third-section-content div div:hover {
+  border: 1.5px solid var(--primary--color--);
 }
 
 .third-section-content div div ul {
@@ -623,6 +655,12 @@ header {
   background-color: white;
   overflow: hidden;
   gap: 15px;
+  transition: 0.6s;
+}
+
+.card:hover {
+  border: 1px solid var(--primary--color--);
+  transform: scale(1.02);
 }
 
 .profile {

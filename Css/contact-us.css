@@ -148,6 +148,11 @@ header {
 
 .top-header-get-start button {
   padding: 11px 22px;
+  transition: background-color 0.6s;
+}
+
+.top-header-get-start button:hover {
+  background-color: #12379a;
 }
 
 /* bottom header */
@@ -258,7 +263,6 @@ header {
   background-image: url("../image/contact-us\ first\ sction\ img.webp");
   background-repeat: no-repeat;
   background-position: center right;
-
 }
 
 .bottom-header-content-left-content {
@@ -269,27 +273,6 @@ header {
   gap: 20px;
 }
 
-.bottom-header-content-left-content ul {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  list-style: none;
-}
-
-.bottom-header-content-left-content ul li {
-  border: 1px solid #E4E9F3;
-  border-radius: 12px;
-  padding: 7px 10px;
-}
-
-.bottom-header-content-left-content ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  place-content: center;
-  font-size: 18px;
-  color: #12379a;
-}
 
 .features-first-container {
   display: flex;
@@ -310,6 +293,12 @@ header {
   border-radius: 15px;
   padding: 12px 15px;
   width: 100%;
+  transition: 0.6s;
+}
+
+.features-second-container:hover {
+  border: 1.5px solid var(--primary--color--);
+  transform: scale(1.02);
 }
 
 .icon-box {
@@ -351,6 +340,34 @@ header {
 .features p {
   font-size: 15px;
   color: #4A5468;
+}
+
+.bottom-header-content-left-content ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+}
+
+.bottom-header-content-left-content ul li {
+  border: 1px solid #E4E9F3;
+  border-radius: 12px;
+  padding: 7px 10px;
+  transition: 0.6s;
+}
+
+.bottom-header-content-left-content ul li:hover {
+  border: 1.5px solid var(--primary--color--);
+  transform: scale(1.02);
+}
+
+.bottom-header-content-left-content ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  font-size: 18px;
+  color: #12379a;
 }
 
 @media(max-width:992px) {
@@ -439,6 +456,11 @@ header {
   border-radius: 22px;
   gap: 10px;
   /* height: 222.2px; */
+  transition: border 0.6s;
+}
+
+.contact-us-way:hover {
+  border: 1.5px solid var(--primary--color--);
 }
 
 .contact-us-way ul {
@@ -693,8 +715,12 @@ form textarea {
   color: white;
   word-spacing: 2px;
   padding: 10px 0px;
+  transition: background-color 0.6s;
 }
 
+.submit:hover {
+  background-color: #12379A;
+}
 
 /* last section */
 
