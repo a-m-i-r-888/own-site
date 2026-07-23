@@ -83,7 +83,6 @@ const comments = document.querySelectorAll(".comment p");
 const userName = document.querySelectorAll(".user-information-container h3");
 const userRoll = document.querySelectorAll(".user-information-container p");
 let commentsHeight;
-let paragraphHeight2;
 let userNameHeight;
 let userRollHeight;
 // important
