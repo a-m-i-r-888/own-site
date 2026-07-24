@@ -114,3 +114,25 @@ window.addEventListener('load', function () {
   calcSliderHeight2();
   getSlidesPerView();
 })
+
+
+// fourth section check marks
+const fourthSection = document.querySelector('.forth-section')
+const checkMarks = document.querySelectorAll('.forth-section .icon-box ul li i');
+
+const activeCheckMarks = function (entries) {
+  const [entry] = entries
+  if (entry.isIntersecting) {
+    checkMarks.forEach((checkMark, index) => {
+      setTimeout(() => {
+        checkMark.classList.add('active')
+      }, index * 600);
+    });
+  }
+}
+const fourthSectionObserve = new IntersectionObserver(activeCheckMarks, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-550px",
+});
+fourthSectionObserve.observe(fourthSection)
