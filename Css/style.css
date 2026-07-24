@@ -8,6 +8,7 @@
   font-family: 'dana', sans-serif;
   /* just for a */
   text-decoration: none;
+  /* cursor: none; */
 }
 
 :root {
@@ -33,7 +34,8 @@ h3,
 h4,
 h5,
 h6,
-li {
+li,
+a {
   cursor: pointer;
 }
 
@@ -90,6 +92,41 @@ header {
 .top-header-get-start button {
   transition: 0.6s;
 }
+
+
+/* mouse cursor */
+.cursor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 1.9px solid var(--primary--color--);
+  border-radius: 100%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+/* hover on links and ... */
+.cursor-container.active {
+  width: 55px;
+  height: 55px;
+}
+
+.cursor {
+  width: 12px;
+  height: 12px;
+  background-color: #06b6d4;
+  border: none;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+
 
 /* top header */
 
@@ -889,18 +926,23 @@ header {
   transform: scale(1.02);
 }
 
-.fifth-section-content .steps h2 {
+.steps h2 {
   color: #DCE7FE;
   font-size: 35px;
+  transition: color 0.6s;
 }
 
-.fifth-section-content .steps h3 {
+.steps:hover h2 {
+  color: var(--primary--color--);
+}
+
+.steps h3 {
   color: var(--secondary--color--);
   font-size: 17px;
   margin-bottom: 5px;
 }
 
-.fifth-section-content .steps p {
+.steps p {
   color: #4A5468;
   font-size: 15px;
   text-align: start;
