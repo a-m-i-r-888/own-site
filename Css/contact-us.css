@@ -81,17 +81,10 @@ header {
 }
 
 /* hover on nav links */
-.top-header-logo img {
+.navbar ul li a {
   transition: opacity 0.6s;
 }
 
-.top-header-nav ul li a {
-  transition: opacity 0.6s;
-}
-
-.top-header-get-start button {
-  transition: opacity 0.6s;
-}
 
 /* mouse cursor */
 .cursor-container {

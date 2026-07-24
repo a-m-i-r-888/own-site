@@ -3,7 +3,7 @@
 const navHoverHandler = function (e) {
   if (e.target.classList.contains('nav-link') & !e.target.classList.contains('active')) {
     const hovered = e.target
-    const links = hovered.closest('.top-header-nav').querySelectorAll('.nav-link');
+    const links = hovered.closest('.navbar').querySelectorAll('.nav-link');
     // const logo = hovered.closest('.top-header-content').querySelector('img');
     // const headerBtn = hovered.closest('.top-header-content').querySelector('button');
     links.forEach(e => {
@@ -13,5 +13,5 @@ const navHoverHandler = function (e) {
     // headerBtn.style.opacity = this;
   }
 }
-document.querySelector('.top-header-content').addEventListener('mouseover', navHoverHandler.bind(0.6))
-document.querySelector('.top-header-content').addEventListener('mouseout', navHoverHandler.bind(1))
+document.querySelectorAll('.navbar').forEach(nav => nav.addEventListener('mouseover', navHoverHandler.bind(0.6)));
+document.querySelectorAll('.navbar').forEach(nav => nav.addEventListener('mouseout', navHoverHandler.bind(1)));

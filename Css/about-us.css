@@ -81,15 +81,7 @@ header {
 }
 
 /* hover on nav links */
-.top-header-logo img {
-  transition: opacity 0.6s;
-}
-
-.top-header-nav ul li a {
-  transition: opacity 0.6s;
-}
-
-.top-header-get-start button {
+.navbar ul li a {
   transition: opacity 0.6s;
 }
 
