@@ -220,6 +220,8 @@ header {
   .top-header-content {
     justify-content: space-between;
     box-shadow: none;
+    width: 100%;
+    padding: 20px 15px;
   }
 
   .top-header-get-start {
@@ -453,7 +455,7 @@ header {
   .bottom-header-content {
     flex-direction: column;
     align-items: center;
-    padding: 0px 30px;
+    padding: 0px 15px;
     width: 100%;
   }
 
@@ -482,17 +484,19 @@ header {
   .bottom-header-content-right-up div:nth-child(1) {
     width: 100%;
     align-items: center;
+    gap: 15px;
   }
 
   .bottom-header-content-right-up div .section-name {
     align-self: center;
+    margin: 0px;
   }
 
   .bottom-header-content-right-up div h1 {
     text-align: center;
-    width: 430px;
-    font-size: 38px;
-    line-height: 50px;
+    width: 250px;
+    font-size: 23px;
+    line-height: 34px;
   }
 
   .bottom-header-content-right-up div h1 br {
@@ -501,7 +505,8 @@ header {
 
   .bottom-header-content-right-up div p {
     text-align: center;
-    width: 420px;
+    width: 300px;
+    font-size: 13px;
   }
 
   .bottom-header-content-right-up div:nth-child(2) {
@@ -540,8 +545,6 @@ header {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  /* padding: 30px 0px 30px 100px; */
-  padding-left: clamp(0px, 2vw, 100px);
   width: 100%;
   margin: 0 auto;
 }
@@ -590,6 +593,8 @@ header {
 }
 
 .slide {
+  /* display: flex;
+  justify-content: center; */
   position: absolute;
   width: 20%;
   left: 0;
@@ -602,7 +607,7 @@ header {
 
 
 .slide p {
-  text-align: start;
+  text-align: center;
   width: 100%;
   font-size: 15px;
   color: #08236B;
@@ -621,6 +626,11 @@ header {
 @media(max-width:1200px) {
   .first-section {
     padding-left: 0px;
+  }
+
+  .first-section-content {
+    width: 100%;
+    padding: 0px 20px;
   }
 
   .slider-container {
@@ -660,13 +670,30 @@ header {
 @media(max-width:767px) {
   .first-section-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 29px;
   }
 
   .slider-container {
     width: 100%;
     min-width: 0px;
     padding: 0px;
+  }
+
+  .slide {
+    width: 35%;
+    /* padding: 0px 20px; */
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-175%);
+    }
   }
 }
 
