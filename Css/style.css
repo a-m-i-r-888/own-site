@@ -217,11 +217,15 @@ header {
 }
 
 @media(max-width:767px) {
+  header {
+    padding: 0px;
+  }
+
   .top-header-content {
     justify-content: space-between;
     box-shadow: none;
     width: 100%;
-    padding: 20px 15px;
+    padding: 25px 15px;
   }
 
   .top-header-get-start {
