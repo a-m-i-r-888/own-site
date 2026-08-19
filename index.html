@@ -21,6 +21,8 @@
   <script defer src="Js/navLinkHover.js"></script>
   <!-- new cursor -->
   <script defer src="Js/mouseCursor.js"></script>
+  <!-- burger menu -->
+  <script defer src="Js/burgerMenu.js"></script>
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
   <title>Akia web</title>
@@ -40,13 +42,18 @@
         <img src="image/logo.webp" alt="logo" />
       </div>
       <nav class="top-header-nav navbar">
-        <ul>
+        <ul class="desktop-menu">
           <li><a href="index.html" class="nav-link active">خانه </a></li>
           <li><a href="section2" class="nav-link">خدمات</a></li>
           <li><a href="portfolio.html" class="nav-link">نمونه‌کارها</a></li>
           <li><a href="section5" class="nav-link">فرآیند کار</a></li>
           <li><a href="about-us.html" class="nav-link">درباره ما</a></li>
           <li><a href="contact-us.html" class="nav-link">تماس با ما</a></li>
+        </ul>
+        <ul class="burger-menu">
+          <li class="burger-menu-line"></li>
+          <li class="burger-menu-line"></li>
+          <li class="burger-menu-line"></li>
         </ul>
       </nav>
       <div class="top-header-get-start">
@@ -61,7 +68,7 @@
               <li class="section-name-li">استودیوی طراحی وب آکیا</li>
             </ul>
             <h1>
-              یک وب‌سایت<span> جدی گرفته می‌شود </span>که برای برندی جدی است
+              یک وب‌سایت<span> جدی گرفته می‌شود </span><br>که برای برندی جدی است
             </h1>
             <p>
               آکیا وب طراحی و توسعه‌ی وب‌سایت‌های اختصاصی، سریع و مدرن را برای
@@ -80,10 +87,10 @@
           <ul>
             <li>
               <div>
-                <h3>12</h3>
+                <h3>4</h3>
               </div>
               <div>
-                <p>پروژه تحویل‌شده</p>
+                <p>سال تجربه</p>
               </div>
             </li>
             <li>
@@ -96,10 +103,10 @@
             </li>
             <li>
               <div>
-                <h3>4</h3>
+                <h3>12</h3>
               </div>
               <div>
-                <p>سال تجربه</p>
+                <p>پروژه تحویل‌شده</p>
               </div>
             </li>
           </ul>
@@ -112,47 +119,49 @@
   </header>
   <main>
     <section class="first-section">
-      <div class="slider-title">
-        <p>برندهایی که به آکیا وب اعتماد کرده‌اند</p>
-      </div>
-      <div class="slider-container">
-        <div class="slider">
-          <div class="track">
-            <div class="slide">
-              <p>بولوت استور</p>
-            </div>
-            <div class="slide">
-              <p>ویس شاپ</p>
-            </div>
-            <div class="slide">
-              <p>بست مکمل</p>
-            </div>
-            <div class="slide">
-              <p>کتابینو</p>
-            </div>
-            <div class="slide">
-              <p>مدرن وین</p>
-            </div>
-            <div class="slide">
-              <p>بولوت استور</p>
-            </div>
-            <div class="slide">
-              <p>ویس شاپ</p>
-            </div>
-            <div class="slide">
-              <p>بست مکمل</p>
-            </div>
-            <div class="slide">
-              <p>کتابینو</p>
-            </div>
-            <div class="slide">
-              <p>مدرن وین</p>
+      <div class="first-section-content">
+        <div class="slider-title">
+          <p>برندهایی که به آکیا وب اعتماد کرده‌اند</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="track">
+              <div class="slide">
+                <p>بولوت استور</p>
+              </div>
+              <div class="slide">
+                <p>ویس شاپ</p>
+              </div>
+              <div class="slide">
+                <p>بست مکمل</p>
+              </div>
+              <div class="slide">
+                <p>کتابینو</p>
+              </div>
+              <div class="slide">
+                <p>مدرن وین</p>
+              </div>
+              <div class="slide">
+                <p>بولوت استور</p>
+              </div>
+              <div class="slide">
+                <p>ویس شاپ</p>
+              </div>
+              <div class="slide">
+                <p>بست مکمل</p>
+              </div>
+              <div class="slide">
+                <p>کتابینو</p>
+              </div>
+              <div class="slide">
+                <p>مدرن وین</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="section2" class="second-section">
+    <!-- <section id="section2" class="second-section">
       <div class="second-section-content">
         <ul class="section-name">
           <li class="section-name-li">خدمات ما</li>
@@ -572,8 +581,8 @@
         </div>
       </div>
     </section>
-  </main>
-  <footer>
+  </main> -->
+    <!-- <footer>
     <div class="footer-content">
       <div class="top-footer">
         <div class="top-footer-logo">
@@ -600,7 +609,7 @@
         <p>© ۱۴۰۴ آکیا وب. تمامی حقوق محفوظ است.</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

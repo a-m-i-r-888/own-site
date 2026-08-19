@@ -336,11 +336,11 @@ header {
 
 .portfolio-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: #F3F6FC;
-  padding: 0px 30px;
+  padding: 0px 30px 50px;
 }
 
 .portfolio-container-content {
@@ -358,10 +358,10 @@ header {
   justify-content: start;
   align-items: start;
   /* background-color: rgb(160, 115, 63); */
-  border: 1px solid #E4E9F3;
+  border: 2px solid #E4E9F3;
   border-radius: 22px;
-  max-height: 392px;
-  min-height: 380px;
+  /* max-height: 392px;
+  min-height: 380px; */
   overflow: hidden;
   transition: transform 0.6s;
 }
@@ -386,7 +386,7 @@ header {
   padding: 24px 30px 10px 30px;
   background-color: white;
   width: 100%;
-  height: 45%;
+  height: 100%;
 }
 
 .portfolio-card-dis ul {
@@ -408,7 +408,45 @@ header {
   font-size: 14px;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  max-width: 285px;
+  justify-content: center;
+}
 
+.ex-page,
+.next-page {
+  display: flex;
+  color: var(--secondary--color--);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E4E9F3;
+  border-radius: 11px;
+  padding: 10px 16px 10px;
+}
+
+.page-num {
+  display: flex;
+  color: var(--secondary--color--);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E4E9F3;
+  border-radius: 11px;
+  padding: 2px 0px 0px;
+  width: 30%;
+  min-width: 46px;
+}
+
+.page-container .active-page {
+  color: white;
+  background-color: var(--primary--color--);
+  font-weight: bold;
+}
 
 /* second section */
 .second-section {
@@ -416,7 +454,7 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding: 70px 30px 0px;
+  padding: 60px 30px 0px;
 }
 
 .second-section-content {
