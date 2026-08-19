@@ -674,7 +674,7 @@ header {
 @media(max-width:767px) {
   .first-section-content {
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
     padding-top: 30px;
     padding-bottom: 29px;
   }
@@ -683,6 +683,10 @@ header {
     width: 100%;
     min-width: 0px;
     padding: 0px;
+  }
+
+  .track {
+    animation: scroll 6s linear infinite;
   }
 
   .slide {
