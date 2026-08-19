@@ -47,8 +47,8 @@ document.querySelectorAll('.navbar').forEach(navbar => {
 
 
 
-// comments slider
 
+// comments slider
 const slider2 = document.querySelector('.comments-card-container');
 const slide2 = document.querySelectorAll('.comments-card');
 const rightBtn = document.querySelector('.right-btn');
@@ -73,6 +73,7 @@ const preSlide = function () {
 }
 rightBtn.addEventListener('click', nextSlide);
 leftBtn.addEventListener('click', preSlide);
+
 document.addEventListener('keydown', function (e) {
   if (e.key === 'ArrowRight') nextSlide();
   // else if (e.key === 'ArrowLeft') preSlide();
@@ -85,10 +86,52 @@ const userRoll = document.querySelectorAll(".user-information-container p");
 let commentsHeight;
 let userNameHeight;
 let userRollHeight;
+
+
+// Mobile infinity comment slider
+// const mobileSliderInfinity = function () {
+//   if (window.innerWidth <= 767) {
+//     setInterval(() => {
+//       nextSlide();
+//     }, 3500);
+//   }
+// }
+let mobileSliderInterval;
+
+const mobileSliderInfinity = function () {
+
+  clearInterval(mobileSliderInterval);
+
+  if (window.innerWidth <= 767) {
+
+    mobileSliderInterval = setInterval(() => {
+      nextSlide();
+    }, 3500);
+
+  }
+};
+
+mobileSliderInfinity();
+
+
+const commentsContainer = document.querySelector(
+  ".comments-card-container"
+);
+
+commentsContainer.addEventListener("touchstart", () => {
+  clearInterval(mobileSliderInterval);
+});
+
+commentsContainer.addEventListener("touchend", () => {
+  mobileSliderInfinity();
+});
+
+
+
 // important
 const getSlidesPerView = function () {
   // if (window.innerWidth <= 576) return 3;
-  // if (window.innerWidth <= 768) return 2;
+  if (window.innerWidth <= 768) return 1;
   if (window.innerWidth <= 992) return 2;
   return 3;
 }
@@ -113,7 +156,10 @@ window.addEventListener('resize', function () {
 window.addEventListener('load', function () {
   calcSliderHeight2();
   getSlidesPerView();
+  mobileSliderInfinity();
 })
+
+
 
 
 // fourth section check marks

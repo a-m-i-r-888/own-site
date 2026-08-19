@@ -295,7 +295,7 @@ header {
 .bottom-header-content-right-up div .section-name .section-name-li {
   color: var(--primary--color--);
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .bottom-header-content-right-up div h1 {
@@ -812,10 +812,33 @@ header {
 }
 
 
+@media(max-width:767px) {
+  .second-section-content:nth-child(1) {
+    padding: 40px 15px 30px;
+  }
+
+  .section-name {
+    margin-bottom: 5px;
+  }
+
+  .second-section-content h2 {
+    font-size: 24px;
+  }
+
+  .second-section-content p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .second-section-content div {
+    flex-direction: column;
+  }
+}
+
+
+
 
 /* third section */
-
-
 .third-section {
   display: flex;
   flex-direction: column;
@@ -931,6 +954,69 @@ header {
 
 .third-section-content button:hover {
   border: 1.5px solid var(--primary--color--);
+}
+
+
+@media(max-width:767px) {
+  .third-section {
+    padding: 50px 0px;
+    gap: 35px;
+  }
+
+  .third-section-content {
+    padding: 0px 15px;
+  }
+
+  .third-section-content h2 {
+    font-size: 24px;
+    text-align: center;
+
+  }
+
+  .third-section-content p {
+    text-align: center;
+    line-height: 23px;
+    /* font-size: ; */
+  }
+
+  .third-section-content .box {
+    flex-direction: column;
+  }
+
+  .box-content-dis {
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .box-content-dis ul {
+    margin-bottom: 12px;
+    justify-self: center
+  }
+
+  .box-content-dis h3 {
+    text-align: center;
+  }
+
+  .box-content-dis p {
+    text-align: center;
+  }
+
+  .third-section-content:nth-child(3) {
+    align-items: center;
+  }
+
+  .third-section-content button {
+    font-size: 15px;
+    align-self: center;
+  }
+
+  .third-section-content button:nth-child(1) {
+    background-color: var(--primary--color--);
+    color: white;
+    padding: 13px 23px 12px;
+    /* max-width: 225px; */
+    font-size: 13px;
+  }
 }
 
 /* forh section */
@@ -1070,9 +1156,70 @@ header {
   }
 }
 
+
+@media(max-width:767px) {
+  .forth-section {
+    padding: 50px 15px 40px;
+  }
+
+  .forth-section-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+  }
+
+  .forth-section-content-text {
+    width: 100%;
+    order: 2;
+  }
+
+  .why-us {
+    align-items: center;
+  }
+
+  .why-us h2 {
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .why-us p {
+    text-align: center;
+  }
+
+  .features-first-container {
+    padding: 30px 0px 0px;
+  }
+
+  .icon-box ul li {
+    background-color: #F1F5FF;
+    padding: 6px 9px;
+    border-radius: 10px;
+  }
+
+  .icon-box ul li i {
+    font-size: 30px;
+  }
+
+  .forth-section-content-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+    order: 1;
+  }
+
+  .forth-section-content-img img {
+    width: 100%;
+    max-width: 270px;
+  }
+}
+
+
+
+
 /* fifth section */
-
-
 .fifth-section {
   display: flex;
   flex-direction: column;
@@ -1156,9 +1303,46 @@ header {
   }
 }
 
+@media(max-width:767px) {
+  .fifth-section {
+    padding: 55px 15px;
+  }
+
+  .fifth-section-content:nth-child(1) {
+    padding: 0px 0px 40px;
+  }
+
+  .fifth-section-content:nth-child(1) .section-name {
+    margin-bottom: 10px;
+  }
+
+  .fifth-section-content:nth-child(1) h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .fifth-section-content:nth-child(1) p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .fifth-section-content:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .steps {
+    width: 100%;
+    padding: 29px 23px;
+    border: 2px solid #E4E9F3;
+  }
+}
+
+
+
 
 /* sixth section */
-
 .sixth-section {
   display: flex;
   flex-direction: column;
@@ -1226,6 +1410,7 @@ header {
   overflow: hidden;
   position: relative;
   height: 100%;
+  justify-content: center;
 }
 
 .comments-card {
@@ -1323,9 +1508,53 @@ header {
   }
 }
 
+@media(max-width:767px) {
+  .sixth-section {
+    padding: 55px 15px;
+  }
+
+  .sixth-section-content {
+    padding: 0px;
+    align-items: center;
+  }
+
+  .sixth-section-content h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 13px;
+  }
+
+  .sixth-section-comments-container {
+    padding: 30px 0px 0px;
+    width: 100%;
+    /* animation: scroll 5s linear infinite; */
+  }
+
+  /* @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  } */
+
+  .comments-card {
+    width: 98%;
+    left: auto;
+  }
+
+  .right-btn,
+  .left-btn {
+    display: none;
+  }
+}
+
+
+
+
 /* seventh section */
-
-
 .seventh-section {
   display: flex;
   flex-direction: row;
