@@ -17,6 +17,8 @@
   <script defer src="Js/stickyNav.js"></script>
   <!-- nav links hover Js -->
   <script defer src="Js/navLinkHover.js"></script>
+  <!-- burger menu -->
+  <script defer src="Js/burgerMenu.js"></script>
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
   <title>about-us</title>
@@ -36,11 +38,16 @@
         <img src="image/logo.webp" alt="logo" />
       </div>
       <nav class="top-header-nav navbar">
-        <ul>
+        <ul class="desktop-menu">
           <li><a href="index.html" class="nav-link">خانه </a></li>
           <li><a href="portfolio.html" class="nav-link">نمونه‌کارها</a></li>
           <li><a href="about-us.html" class="nav-link">درباره ما</a></li>
           <li><a href="contact-us.html" class="nav-link">تماس با ما</a></li>
+        </ul>
+        <ul class="burger-menu">
+          <li class="burger-menu-line"></li>
+          <li class="burger-menu-line"></li>
+          <li class="burger-menu-line"></li>
         </ul>
       </nav>
       <div class="top-header-get-start">
@@ -55,7 +62,7 @@
               <li class="section-name-li">درباره آکیا وب</li>
             </ul>
             <h1>
-              تیمی کوچک، با<span> وسواسی بزرگ </span>روی جزئیات
+              تیمی کوچک، با<span> وسواسی بزرگ </span><br>روی جزئیات
             </h1>
             <p>
               آکیا وب از دل یک باور ساده شکل گرفت: وب‌سایت خوب، فقط زیبا
@@ -70,34 +77,6 @@
             <h4><a href="#">دیدن نمونه‌کارها</a></h4>
           </div>
         </div>
-        <div class="bottom-header-content-right-down">
-          <ul>
-            <li>
-              <div>
-                <h3>12</h3>
-              </div>
-              <div>
-                <p>پروژه تحویل‌شده</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3>98</h3>
-              </div>
-              <div>
-                <p>٪ رضایت مشتری</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3>4</h3>
-              </div>
-              <div>
-                <p>سال تجربه</p>
-              </div>
-            </li>
-          </ul>
-        </div>
       </div>
       <div class="bottom-header-content-left">
         <img src="image/about-us header img.webp" alt="image" />
@@ -108,38 +87,42 @@
     <section class="first-section">
       <div class="first-section-content">
         <ul>
-          <li>
-            <div>
-              <h3>+20</h3>
-            </div>
-            <div>
-              <p>پروژه تحویل‌شده</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>98%</h3>
-            </div>
-            <div>
-              <p>رضایت مشتری</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>+4</h3>
-            </div>
-            <div>
-              <p>سال تجربه</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>+4</h3>
-            </div>
-            <div>
-              <p>عضو تیم</p>
-            </div>
-          </li>
+          <div>
+            <li>
+              <div>
+                <h3>۲۰+</h3>
+              </div>
+              <div>
+                <p>پروژه تحویل‌شده</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>%۹۸</h3>
+              </div>
+              <div>
+                <p>رضایت مشتری</p>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <div>
+                <h3>۷+</h3>
+              </div>
+              <div>
+                <p>سال تجربه</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>۴+</h3>
+              </div>
+              <div>
+                <p>عضو تیم</p>
+              </div>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
@@ -182,7 +165,7 @@
             </div>
             <div>
               <h3>به زودی...</h3>
-              <p>....................................................................</p>
+              <p>.............................................</p>
             </div>
           </div>
         </div>

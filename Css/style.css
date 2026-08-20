@@ -219,7 +219,6 @@ header {
 
 
 /* bottom header */
-
 .bottom-header-content {
   display: flex;
   flex-direction: row;
@@ -465,8 +464,8 @@ header {
 
   .bottom-header-content-right-up div h1 {
     text-align: center;
-    width: 250px;
-    font-size: 23px;
+    width: 280px;
+    font-size: 25px;
     line-height: 34px;
   }
 
@@ -477,7 +476,7 @@ header {
   .bottom-header-content-right-up div p {
     text-align: center;
     width: 300px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .bottom-header-content-right-up div:nth-child(2) {
@@ -510,7 +509,6 @@ header {
 
 
 /* first section */
-
 .first-section {
   display: flex;
   flex-direction: row;
