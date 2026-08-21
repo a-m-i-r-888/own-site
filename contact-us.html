@@ -17,6 +17,8 @@
   <script defer src="Js/stickyNav.js"></script>
   <!-- nav links hover Js -->
   <script defer src="Js/navLinkHover.js"></script>
+  <!-- burger menu -->
+  <script defer src="Js/burgerMenu.js"></script>
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
   <title>contact-us</title>
@@ -36,11 +38,16 @@
         <img src="image/logo.webp" alt="logo" />
       </div>
       <nav class="top-header-nav navbar">
-        <ul>
+        <ul class="desktop-menu">
           <li><a href="index.html" class="nav-link">خانه </a></li>
           <li><a href="portfolio.html" class="nav-link">نمونه‌کارها</a></li>
           <li><a href="about-us.html" class="nav-link">درباره ما</a></li>
           <li><a href="contact-us.html" class="nav-link">تماس با ما</a></li>
+        </ul>
+        <ul class="burger-menu">
+          <li class="burger-menu-line"></li>
+          <li class="burger-menu-line"></li>
+          <li class="burger-menu-line"></li>
         </ul>
       </nav>
       <div class="top-header-get-start">
@@ -185,10 +192,14 @@
           </div>
           <div class="team-social">
             <ul>
-              <li><a href="#"><i class="ri-instagram-line"></i>اینستاگرام</a></li>
-              <li><a href="#"><i class="ri-telegram-2-line"></i>تلگرام</a></li>
-              <li><a href="#"><i class="ri-chat-3-line"></i>تلگرام</a></li>
-              <li><a href="#"><i class="ri-mail-line"></i>جیمیل</a></li>
+              <div>
+                <li><a href="#"><i class="ri-telegram-2-line"></i>تلگرام</a></li>
+                <li><a href="#"><i class="ri-chat-3-line"></i>تلگرام</a></li>
+                <li><a href="#"><i class="ri-mail-line"></i>جیمیل</a></li>
+              </div>
+              <div>
+                <li><a href="#"><i class="ri-instagram-line"></i>اینستاگرام</a></li>
+              </div>
             </ul>
           </div>
         </div>
