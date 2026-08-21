@@ -448,11 +448,11 @@ header {
   }
 
   .bottom-header-content-right-down ul li div h3 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .bottom-header-content-right-down ul li div p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -1099,8 +1099,9 @@ header {
   .fifth-section-content {
     width: 100%;
     flex-direction: column;
-    padding: 40px 20px 27px;
+    padding: 35px 20px 27px;
     gap: 17px;
+    border-radius: 25px;
   }
 
   .right-content {
