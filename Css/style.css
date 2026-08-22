@@ -184,7 +184,7 @@ header {
   left: 50%;
 
   width: 100%;
-  max-width: 280px;
+  max-width: 310px;
 
   /* حالت اولیه */
   transform: translate(-50%, -50%) scale(0.08);
