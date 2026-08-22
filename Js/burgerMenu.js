@@ -2,8 +2,8 @@
 // burger menu
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerMenuLine = document.querySelectorAll('.burger-menu-line');
-// const overlay = document.querySelector('.overlay')
+const mobileMenuPopUp = document.querySelector('.mobile-menu-pop-up')
 burgerMenu.addEventListener('click', function () {
   burgerMenuLine.forEach(line => line.classList.toggle('active'));
-  // overlay.classList.toggle('active')
+  mobileMenuPopUp.classList.toggle('active')
 })
