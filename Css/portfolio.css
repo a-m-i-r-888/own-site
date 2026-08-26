@@ -534,6 +534,8 @@ header {
   justify-content: center;
 }
 
+
+
 .ex-page,
 .next-page {
   display: flex;
@@ -548,7 +550,6 @@ header {
 
 .page-num {
   display: flex;
-  color: var(--secondary--color--);
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -559,9 +560,16 @@ header {
   min-width: 46px;
 }
 
+.page-num a {
+  color: var(--secondary--color--);
+}
+
 .page-container .active-page {
-  color: white;
   background-color: var(--primary--color--);
+}
+
+.page-container .active-page a {
+  color: white;
   font-weight: bold;
 }
 
