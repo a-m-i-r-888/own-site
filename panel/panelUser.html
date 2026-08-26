@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- own Css -->
+  <link rel="stylesheet" href="../Css/panelUser.css" />
+  <!-- current page Js -->
+  <script defer src="../Js/currentPage.js"></script>
+  <!-- smooth scroll Js -->
+  <script defer src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script defer src="../Js/smooth-scroll.js"></script>
+  <!-- horizontal scrollbar Js -->
+  <script defer src="../Js/horizontalScrollbar.js"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
+  <title>panel user</title>
+</head>
+
+<body>
+  <!-- horizontal scrollbar -->
+  <div class="scroll-progress"></div>
+  <!-- side bar -->
+  <div class="side-bar">
+    <div>
+      <div class="user">
+        <div class="user-info">
+          <div>
+            <h2>Akia Web</h2>
+          </div>
+          <div>
+            <h5>Akia Studio</h5>
+          </div>
+        </div>
+        <div class="user-prof"><img src="../image/panel profile.png" alt="profile"></div>
+      </div>
+    </div>
+    <div class="sort-container">
+      <div class="sort">
+        <div class="sort-title">
+          <h3>داشبورد</h3>
+        </div>
+        <div class="sort-page">
+          <a href="panelDashboard.html">داشبورد <i class="ri-home-2-line"></i></a>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-title">
+          <h3>نمونه‌کارها</h3>
+        </div>
+        <div class="sort-page">
+          <a href="panelPortfolio.html">مشاهده همه نمونه‌کارها <i class="ri-grid-line"></i></a>
+          <a href="panelUser.html">کاربران<i class="ri-sparkling-line"></i></a>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-title">
+          <h3>ارتباطات</h3>
+        </div>
+        <div class="sort-page">
+          <a href="">فرم <i class="ri-mail-line"></i></a>
+          <a href="">نظرات مشتریان <i class="ri-loader-2-line"></i></a>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-title">
+          <h3>حساب کاربری</h3>
+        </div>
+        <div class="sort-page">
+          <a href="">پروفایل <i class="ri-user-line"></i></a>
+          <a href="">خروج <i class="ri-settings-3-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main site -->
+  <header>
+    <div class="header-content">
+      <div class="user">
+        <div class="user-info">
+          <div>
+            <h2>کایان بیاد</h2>
+          </div>
+          <div>
+            <h5>سوپر ادمین</h5>
+          </div>
+        </div>
+        <div class="user-prof"><img src="../image/panel profile.png" alt="profile"></div>
+      </div>
+      <div class="header-searchbar">
+        <input type="text" placeholder="جستجو در نمونه‌کارها...">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="first-section">
+      <div class="first-section-content">
+        <div class="section-title">
+          <div>
+            <h1>کاربران</h1>
+            <p>کاربران و نقش‌های دسترسی آن‌ها را از اینجا مدیریت کنید.</p>
+          </div>
+          <div>
+            <button>افزودن ادمین <i class="ri-add-line"></i></button>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="portfolio-container-content">
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-dis">
+                <div class="dis-top">
+                  <div class="user">
+                    <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+                    <div class="user-info">
+                      <div>
+                        <h2>نگار کریمی</h2>
+                      </div>
+                      <div>
+                        <h5>negar@example.com</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="section-name">
+                      <li class="section-name-li">کاربر</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dis-bottom">
+                  <div class="first">
+                    <div>
+                      <p>فعال</p>
+                    </div>
+                    <div>
+                      <p>آخرین ورود: ۴ روز پیش</p>
+                    </div>
+                  </div>
+                  <div class="second">
+                    <button>ویرایش</button>
+                    <button>افزودن ادمین</button>
+                    <button>حذف کاربر</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
