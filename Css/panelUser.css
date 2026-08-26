@@ -60,6 +60,7 @@ body {
 
 .side-bar .user {
   gap: 17px;
+  justify-content: center;
 }
 
 .side-bar .user-info {
