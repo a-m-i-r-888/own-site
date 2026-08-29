@@ -5,17 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- own Css -->
-  <link rel="stylesheet" href="../Css/panelDashboard.css" />
+  <link rel="stylesheet" href="../Css/panelProfile.css" />
   <!-- current page Js -->
   <script defer src="../Js/panelCurrentPage.js"></script>
   <!-- smooth scroll Js -->
   <script defer src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
   <script defer src="../Js/smooth-scroll.js"></script>
+  <!-- tabbed Componet Js -->
+  <script defer src="../Js/tabbedComponet.js"></script>
   <!-- horizontal scrollbar Js -->
   <script defer src="../Js/horizontalScrollbar.js"></script>
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
-  <title>panel dashboard</title>
+  <title>panel profile</title>
 </head>
 
 <body>
@@ -42,7 +44,7 @@
           <h3>داشبورد</h3>
         </div>
         <div class="sort-page">
-          <a class="active" href="panelDashboard.html"><i class="ri-home-2-line"></i> داشبورد</a>
+          <a href="panelDashboard.html"><i class="ri-home-2-line"></i> داشبورد</a>
         </div>
       </div>
       <div class="sort">
@@ -93,14 +95,75 @@
 
   <main>
     <section class="first-section">
+      <button class="save-btn">اطلاعات پروفایل ذخیره شد.</button>
       <div class="first-section-content">
         <div class="section-title">
-          <div>
-            <h1>سلام کایان 👋</h1>
-            <p>این نمای کلی وضعیت پروژه‌ها و سفارش‌های شماست.</p>
+          <h1>پروفایل</h1>
+          <p>اطلاعات حساب کاربری و تنظیمات امنیتی خود را مدیریت کنید.</p>
+        </div>
+        <div class="section-content">
+          <div class="first-content">
+            <div class="user">
+              <div class="user-prof"><img src="../image/panel user profile.png" alt="profile"></div>
+              <div class="user-info">
+                <div>
+                  <h2>نگار کریمی</h2>
+                </div>
+                <div>
+                  <h5>negar@example.com</h5>
+                </div>
+                <div>
+                  <button>مدیر سایت</button>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button>تغییر عکس پروفایل <i class="ri-add-line"></i></button>
+            </div>
           </div>
-          <div>
-            <button>ثبت پروژه جدید <i class="ri-add-line"></i></button>
+          <div class="second-content">
+            <div class="dis">
+              <h2>اطلاعات حساب</h2>
+              <p>نام و ایمیل حساب کاربری خود را ویرایش کنید.</p>
+            </div>
+            <div class="info">
+              <div>
+                <h5>اسم کاربر</h5>
+                <input type="text" placeholder="کایان بیاد">
+              </div>
+              <div>
+                <h5>ایمیل</h5>
+                <input type="email" placeholder="mohammad@example.com">
+              </div>
+            </div>
+            <div class="save">
+              <button>ذخیره تغییرات</button>
+            </div>
+          </div>
+          <div class="third-content">
+            <div class="dis">
+              <h2>اطلاعات حساب</h2>
+              <p>نام و ایمیل حساب کاربری خود را ویرایش کنید.</p>
+            </div>
+            <div class="info">
+              <div>
+                <h5>پسورد فعلی</h5>
+                <input type="password" placeholder="پسورد فعلی">
+              </div>
+            </div>
+            <div class="info2">
+              <div>
+                <h5>پسورد جدید</h5>
+                <input type="password" placeholder="پسورد جدید">
+              </div>
+              <div>
+                <h5>تکرار پسورد</h5>
+                <input type="password" placeholder="تکرار پسورد">
+              </div>
+            </div>
+            <div class="save">
+              <button>تغییر رمز عبور</button>
+            </div>
           </div>
         </div>
       </div>

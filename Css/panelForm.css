@@ -1,0 +1,395 @@
+/* general */
+@import url("https://fonts.cdnfonts.com/css/dana");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'dana', sans-serif;
+  /* just for a */
+  text-decoration: none;
+  /* cursor: none; */
+}
+
+/* remove default scrollvar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+/* style horizontal scrollbar */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg,
+      #2563eb,
+      #06b6d4,
+      #22c55e);
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(37, 99, 235, .5);
+}
+
+body {
+  padding-right: 280px;
+  position: relative;
+}
+
+
+
+/* side-bar */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 100%;
+  background-color: #11131A;
+  padding: 18px 25px 18px 35px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  gap: 40px;
+}
+
+.side-bar .user {
+  gap: 17px;
+  justify-content: center;
+}
+
+.side-bar .user-info {
+  align-items: end;
+}
+
+.side-bar .user-info h2 {
+  color: white;
+}
+
+.side-bar .user-info p {
+  color: #858B9C;
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 35px;
+}
+
+.sort {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.sort-title {
+  width: 100%;
+}
+
+.sort-title h3 {
+  color: #666C7B;
+  font-size: 15px;
+}
+
+.sort-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.sort-page a {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #A9AFBD;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 9px 16px 8px;
+  border-radius: 11px;
+}
+
+.sort-page a.active {
+  background-color: #ffffff27;
+}
+
+.sort-page a i {
+  place-content: center;
+}
+
+
+
+
+/* main site */
+header {
+  padding: 18px 35px;
+}
+
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info h2 {
+  color: #111827;
+  font-size: 18px;
+}
+
+.user-info h5 {
+  color: #7B8495;
+  font-size: 13.5px;
+}
+
+.user-prof {
+  display: flex;
+  width: 45px;
+}
+
+.user-prof img {
+  width: 100%;
+}
+
+.header-searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 220px;
+}
+
+.header-searchbar input {
+  width: 100%;
+  border: 1.8px solid #E9EDF4;
+  padding: 8px 13px 7px;
+  outline: none;
+  border-radius: 11px;
+  background-color: #F8F9FC;
+}
+
+.first-section {
+  width: 100%;
+  background-color: #e9edf4c9;
+  padding: 25px 30px 0px;
+}
+
+.first-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section-title h1 {
+  font-size: 28px;
+  color: #111827;
+}
+
+.section-title p {
+  font-size: 15px;
+  color: #7B8495;
+  font-weight: 500;
+}
+
+.section-title button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  place-content: center;
+  align-items: center;
+  padding: 9px 17px 8px 14px;
+  background-color: #1E4FDB;
+  border: none;
+  color: white;
+  font-size: 13.5px;
+  border-radius: 11px;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  padding: 35px 0px 50px;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  /* background-color: rgb(160, 115, 63); */
+  border: 2px solid #E4E9F3;
+  border-radius: 22px;
+  /* max-height: 392px;
+  min-height: 380px; */
+  overflow: hidden;
+  transition: transform 0.6s;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.02);
+}
+
+.portfolio-card-dis {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 30px 0px 20px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.dis-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1.8px solid #E4E9F3;
+  padding-bottom: 10px;
+}
+
+.dis-top div:has(.section-name) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.top-second {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: start;
+}
+
+.top-second h2 {
+  font-size: 15px;
+  color: #111827;
+}
+
+.top-second p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #626B7A;
+  text-align: justify;
+}
+
+.section-name {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.section-name .section-name-li {
+  color: #9AA2B1;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.portfolio-card-dis ul {
+  display: flex;
+  padding: 8px 15px 8px 15px;
+  list-style: none;
+  justify-self: start;
+  margin-bottom: 20px;
+}
+
+.portfolio-card-dis h3 {
+  color: #111827;
+  font-size: 20px;
+}
+
+.portfolio-card-dis p {
+  color: #7B8495;
+  font-size: 14px;
+}
+
+.dis-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 0px 0px;
+}
+
+.dis-bottom .first {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.dis-bottom p {
+  color: #7B8495;
+  font-size: 14px;
+}
+
+.dis-bottom .second {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.dis-bottom .second button {
+  padding: 9px 23px 9px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background-color: #1E4FDB;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dis-bottom .second button:nth-child(2) {
+  color: #E04444;
+  background-color: #FFF0F0;
+}

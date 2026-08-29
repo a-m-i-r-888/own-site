@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- own Css -->
+  <link rel="stylesheet" href="../Css/panelForm.css" />
+  <!-- current page Js -->
+  <script defer src="../Js/panelCurrentPage.js"></script>
+  <!-- smooth scroll Js -->
+  <script defer src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script defer src="../Js/smooth-scroll.js"></script>
+  <!-- tabbed Componet Js -->
+  <script defer src="../Js/tabbedComponet.js"></script>
+  <!-- horizontal scrollbar Js -->
+  <script defer src="../Js/horizontalScrollbar.js"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
+  <title>panel form</title>
+</head>
+
+<body>
+  <!-- horizontal scrollbar -->
+  <div class="scroll-progress"></div>
+  <!-- side bar -->
+  <div class="side-bar">
+    <div>
+      <div class="user">
+        <div class="user-info">
+          <div>
+            <h2>Akia Web</h2>
+          </div>
+          <div>
+            <h5>Akia Studio</h5>
+          </div>
+        </div>
+        <div class="user-prof"><img src="../image/panel profile.png" alt="profile"></div>
+      </div>
+    </div>
+    <div class="sort-container">
+      <div class="sort">
+        <div class="sort-title">
+          <h3>داشبورد</h3>
+        </div>
+        <div class="sort-page">
+          <a href="panelDashboard.html"><i class="ri-home-2-line"></i> داشبورد</a>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-title">
+          <h3>نمونه‌کارها</h3>
+        </div>
+        <div class="sort-page">
+          <a href="panelPortfolio.html"><i class="ri-grid-line"></i> مشاهده همه نمونه‌کارها</a>
+          <a href="panelUser.html"><i class="ri-sparkling-line"></i> کاربران</a>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-title">
+          <h3>ارتباطات</h3>
+        </div>
+        <div class="sort-page">
+          <a href="panelForm.html"><i class="ri-mail-line"></i> فرم </a>
+          <a href="panelComments.html"><i class="ri-loader-2-line"></i> نظرات مشتریان</a>
+        </div>
+      </div>
+      <div class="sort">
+        <div class="sort-title">
+          <h3>حساب کاربری</h3>
+        </div>
+        <div class="sort-page">
+          <a href="panelProfile.html"><i class="ri-user-line"></i> پروفایل</a>
+          <a href="../index.html"><i class="ri-settings-3-line"></i> خروج</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main site -->
+  <header>
+    <div class="header-content">
+      <div class="user">
+        <div class="user-info">
+          <div>
+            <h2>کایان بیاد</h2>
+          </div>
+          <div>
+            <h5>سوپر ادمین</h5>
+          </div>
+        </div>
+        <div class="user-prof"><img src="../image/panel profile.png" alt="profile"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="first-section">
+      <div class="first-section-content">
+        <div class="section-title">
+          <div>
+            <h1>تماس مشتریان</h1>
+            <p>پیام‌هایی که از فرم تماس سایت دریافت شده‌اند.</p>
+          </div>
+          <div>
+            <button>۶ پیام جدید</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="portfolio-card">
+          <div class="portfolio-card-dis">
+            <div class="dis-top">
+              <div class="top-first">
+                <div class="user">
+                  <div class="user-info">
+                    <div>
+                      <h2>نگار کریمی</h2>
+                    </div>
+                    <div>
+                      <h5>negar@example.com</h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="section-name">
+                    <li class="section-name-li">امروز</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-second">
+                <h2>درخواست طراحی سایت فروشگاهی</h2>
+                <p>سلام، برای کسب‌وکارم به یک فروشگاه اینترنتی مدرن نیاز دارم. لطفاً درباره هزینه و زمان
+                  اجرای پروژه راهنمایی کنید.</p>
+              </div>
+            </div>
+            <div class="dis-bottom">
+              <div class="first">
+                <div>
+                  <p>شماره تماس: 0912 123 4567</p>
+                </div>
+              </div>
+              <div class="second">
+                <button>تماس با مشتری</button>
+                <button>حذف پیام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card-dis">
+            <div class="dis-top">
+              <div class="top-first">
+                <div class="user">
+                  <div class="user-info">
+                    <div>
+                      <h2>نگار کریمی</h2>
+                    </div>
+                    <div>
+                      <h5>negar@example.com</h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="section-name">
+                    <li class="section-name-li">امروز</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-second">
+                <h2>درخواست طراحی سایت فروشگاهی</h2>
+                <p>سلام، برای کسب‌وکارم به یک فروشگاه اینترنتی مدرن نیاز دارم. لطفاً درباره هزینه و زمان
+                  اجرای پروژه راهنمایی کنید.</p>
+              </div>
+            </div>
+            <div class="dis-bottom">
+              <div class="first">
+                <div>
+                  <p>شماره تماس: 0912 123 4567</p>
+                </div>
+              </div>
+              <div class="second">
+                <button>تماس با مشتری</button>
+                <button>حذف پیام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card-dis">
+            <div class="dis-top">
+              <div class="top-first">
+                <div class="user">
+                  <div class="user-info">
+                    <div>
+                      <h2>نگار کریمی</h2>
+                    </div>
+                    <div>
+                      <h5>negar@example.com</h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="section-name">
+                    <li class="section-name-li">امروز</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-second">
+                <h2>درخواست طراحی سایت فروشگاهی</h2>
+                <p>سلام، برای کسب‌وکارم به یک فروشگاه اینترنتی مدرن نیاز دارم. لطفاً درباره هزینه و زمان
+                  اجرای پروژه راهنمایی کنید.</p>
+              </div>
+            </div>
+            <div class="dis-bottom">
+              <div class="first">
+                <div>
+                  <p>شماره تماس: 0912 123 4567</p>
+                </div>
+              </div>
+              <div class="second">
+                <button>تماس با مشتری</button>
+                <button>حذف پیام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card-dis">
+            <div class="dis-top">
+              <div class="top-first">
+                <div class="user">
+                  <div class="user-info">
+                    <div>
+                      <h2>نگار کریمی</h2>
+                    </div>
+                    <div>
+                      <h5>negar@example.com</h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="section-name">
+                    <li class="section-name-li">امروز</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-second">
+                <h2>درخواست طراحی سایت فروشگاهی</h2>
+                <p>سلام، برای کسب‌وکارم به یک فروشگاه اینترنتی مدرن نیاز دارم. لطفاً درباره هزینه و زمان
+                  اجرای پروژه راهنمایی کنید.</p>
+              </div>
+            </div>
+            <div class="dis-bottom">
+              <div class="first">
+                <div>
+                  <p>شماره تماس: 0912 123 4567</p>
+                </div>
+              </div>
+              <div class="second">
+                <button>تماس با مشتری</button>
+                <button>حذف پیام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card-dis">
+            <div class="dis-top">
+              <div class="top-first">
+                <div class="user">
+                  <div class="user-info">
+                    <div>
+                      <h2>نگار کریمی</h2>
+                    </div>
+                    <div>
+                      <h5>negar@example.com</h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="section-name">
+                    <li class="section-name-li">امروز</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-second">
+                <h2>درخواست طراحی سایت فروشگاهی</h2>
+                <p>سلام، برای کسب‌وکارم به یک فروشگاه اینترنتی مدرن نیاز دارم. لطفاً درباره هزینه و زمان
+                  اجرای پروژه راهنمایی کنید.</p>
+              </div>
+            </div>
+            <div class="dis-bottom">
+              <div class="first">
+                <div>
+                  <p>شماره تماس: 0912 123 4567</p>
+                </div>
+              </div>
+              <div class="second">
+                <button>تماس با مشتری</button>
+                <button>حذف پیام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card-dis">
+            <div class="dis-top">
+              <div class="top-first">
+                <div class="user">
+                  <div class="user-info">
+                    <div>
+                      <h2>نگار کریمی</h2>
+                    </div>
+                    <div>
+                      <h5>negar@example.com</h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="section-name">
+                    <li class="section-name-li">امروز</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-second">
+                <h2>درخواست طراحی سایت فروشگاهی</h2>
+                <p>سلام، برای کسب‌وکارم به یک فروشگاه اینترنتی مدرن نیاز دارم. لطفاً درباره هزینه و زمان
+                  اجرای پروژه راهنمایی کنید.</p>
+              </div>
+            </div>
+            <div class="dis-bottom">
+              <div class="first">
+                <div>
+                  <p>شماره تماس: 0912 123 4567</p>
+                </div>
+              </div>
+              <div class="second">
+                <button>تماس با مشتری</button>
+                <button>حذف پیام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card-dis">
+            <div class="dis-top">
+              <div class="top-first">
+                <div class="user">
+                  <div class="user-info">
+                    <div>
+                      <h2>نگار کریمی</h2>
+                    </div>
+                    <div>
+                      <h5>negar@example.com</h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="section-name">
+                    <li class="section-name-li">امروز</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-second">
+                <h2>درخواست طراحی سایت فروشگاهی</h2>
+                <p>سلام، برای کسب‌وکارم به یک فروشگاه اینترنتی مدرن نیاز دارم. لطفاً درباره هزینه و زمان
+                  اجرای پروژه راهنمایی کنید.</p>
+              </div>
+            </div>
+            <div class="dis-bottom">
+              <div class="first">
+                <div>
+                  <p>شماره تماس: 0912 123 4567</p>
+                </div>
+              </div>
+              <div class="second">
+                <button>تماس با مشتری</button>
+                <button>حذف پیام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
