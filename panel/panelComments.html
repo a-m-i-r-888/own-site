@@ -15,6 +15,8 @@
   <script defer src="../Js/tabbedComponet.js"></script>
   <!-- horizontal scrollbar Js -->
   <script defer src="../Js/horizontalScrollbar.js"></script>
+  <!-- modal Js -->
+  <script defer src="../Js/panelModal.js"></script>
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
   <title>panel comments</title>
@@ -97,6 +99,63 @@
   </header>
 
   <main>
+    <div class="modal">
+      <div class="modal-title">
+        <div>
+          <h2>افزودن نظر جدید</h2>
+          <p>اطلاعات نظر مشتری را وارد کنید.</p>
+        </div>
+        <div class="close-modal">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="input-name">
+          <h5>متن نظر *</h5>
+        </div>
+        <div class="site-dis">
+          <textarea name="" id="" placeholder="نظر مشتری را وارد کنید..."></textarea>
+        </div>
+        <div class="name-titel-section">
+          <div class="site-name">
+            <h5>اسم *</h5>
+            <input type="text" placeholder="نام مشتری">
+          </div>
+        </div>
+        <div class="input-name">
+          <h5>تایتل *</h5>
+        </div>
+        <div class="site-link">
+          <input type="text" placeholder="مثلاً مدیرعامل شرکت">
+        </div>
+        <div class="input-name">
+          <h5>لینک وبسایت مشتری</h5>
+        </div>
+        <div class="site-link">
+          <input type="text" placeholder="https://example.com">
+        </div>
+        <div class="input-name">
+          <h5>عکس *</h5>
+        </div>
+        <div class="upload-box">
+          <input type="file" id="file-input" accept="image/*">
+
+          <label for="file-input" class="upload-label">
+            <div class="upload-icon">
+              <i class="ri-arrow-up-long-fill"></i>
+            </div>
+
+            <h4>انتخاب عکس مشتری</h4>
+
+            <p>PNG، JPG ، WEBP</p>
+          </label>
+        </div>
+        <div class="add-site">
+          <button><i class="ri-check-line"></i> ثبت نظر</button>
+          <button>انصراف</button>
+        </div>
+      </div>
+    </div>
     <section class="first-section">
       <div class="first-section-content">
         <div class="section-title">
@@ -105,7 +164,7 @@
             <p>تمام نظرات ثبت‌شده مشتریان را مشاهده و مدیریت کنید.</p>
           </div>
           <div>
-            <button> افزودن نظر جدید<i class="ri-add-line"></i></button>
+            <button class="modal-btn"> افزودن نظر جدید<i class="ri-add-line"></i></button>
           </div>
         </div>
         <div class="first-section-first-content">

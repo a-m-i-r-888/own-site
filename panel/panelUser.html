@@ -13,6 +13,8 @@
   <script defer src="../Js/smooth-scroll.js"></script>
   <!-- horizontal scrollbar Js -->
   <script defer src="../Js/horizontalScrollbar.js"></script>
+  <!-- modal Js -->
+  <script defer src="../Js/panelModal.js"></script>
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
   <title>panel user</title>
@@ -95,6 +97,47 @@
   </header>
 
   <main>
+    <div class="modal">
+      <div class="modal-title">
+        <div>
+          <h2>افزودن ادمین</h2>
+          <p>ساخت حساب مدیر جدید</p>
+        </div>
+        <div class="close-modal">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="name-titel-section">
+          <div class="site-name">
+            <h5>اسم نمایشی</h5>
+            <input type="text" placeholder="نام و نام خانوادگی">
+          </div>
+        </div>
+        <div class="input-name">
+          <h5>ایمیل</h5>
+        </div>
+        <div class="site-dis">
+          <input type="email" placeholder="admin@example.com">
+        </div>
+        <div class="input-name">
+          <h5>پسورد</h5>
+        </div>
+        <div class="pass">
+          <input type="password" placeholder="رمز عبور">
+        </div>
+        <div class="input-name">
+          <h5>تکرار پسورد</h5>
+        </div>
+        <div class="site-link">
+          <input type="password" placeholder="تکرار رمز عبور">
+        </div>
+        <div class="add-site">
+          <button><i class="ri-check-line"></i> ثبت ادمین</button>
+          <button>انصراف</button>
+        </div>
+      </div>
+    </div>
     <section class="first-section">
       <div class="first-section-content">
         <div class="section-title">
@@ -103,7 +146,7 @@
             <p>کاربران و نقش‌های دسترسی آن‌ها را از اینجا مدیریت کنید.</p>
           </div>
           <div>
-            <button>افزودن ادمین <i class="ri-add-line"></i></button>
+            <button class="modal-btn">افزودن ادمین <i class="ri-add-line"></i></button>
           </div>
         </div>
         <div class="section-content">
