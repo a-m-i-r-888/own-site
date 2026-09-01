@@ -132,7 +132,7 @@ commentsContainer.addEventListener("touchend", () => {
 const getSlidesPerView = function () {
   // if (window.innerWidth <= 576) return 3;
   if (window.innerWidth <= 768) return 1;
-  if (window.innerWidth <= 992) return 2;
+  if (window.innerWidth <= 1100) return 2;
   return 3;
 }
 const calcSliderHeight2 = function () {
@@ -179,6 +179,45 @@ const activeCheckMarks = function (entries) {
 const fourthSectionObserve = new IntersectionObserver(activeCheckMarks, {
   root: null,
   threshold: 0,
-  rootMargin: "-550px",
+  rootMargin: window.innerWidth > 768
+    ? "0px 0px -60% 0px"
+    : "0px 0px -100% 0px"
 });
 fourthSectionObserve.observe(fourthSection)
+
+
+
+//mobile portfolio slider
+// let thirdSliderInterval;
+// let thirdSliderIndex = 0;
+
+// const thirdSectionContent = document.querySelector(
+//   ".third-section-content:has(.box-content)"
+// );
+
+// const thirdSliderItems = document.querySelectorAll(
+//   ".third-section-content .box-content"
+// );
+
+// const thirdSectionSlider = function () {
+
+//   clearInterval(thirdSliderInterval);
+
+//   if (window.innerWidth < 767) {
+
+//     thirdSliderInterval = setInterval(() => {
+
+//       thirdSliderIndex++;
+
+//       if (thirdSliderIndex >= thirdSliderItems.length) {
+//         thirdSliderIndex = 0;
+//       }
+
+//       thirdSectionContent.style.transform =
+//         `translateX(${thirdSliderIndex * 100}%)`;
+
+//     }, 1000);
+//   }
+// };
+
+// thirdSectionSlider();
