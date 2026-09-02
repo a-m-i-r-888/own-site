@@ -1,0 +1,148 @@
+/* general */
+@import url("https://fonts.cdnfonts.com/css/dana");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'dana', sans-serif;
+  /* just for a */
+  text-decoration: none;
+  /* cursor: none; */
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100dvh;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.first-section-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  align-items: center !important;
+  position: relative;
+}
+
+.right-circle {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  top: 50px;
+  right: -130px;
+  background-color: #1e50dbbe;
+}
+
+.bottom-img {
+  display: flex;
+  flex-direction: row;
+  max-width: 250px;
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-img img {
+  width: 100%;
+}
+
+.left-circle {
+  display: flex;
+  flex-direction: row;
+  width: 90px;
+  height: 90px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -80px;
+  left: -110px;
+  background-color: #E5EFFF;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: -15px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.title h2 {
+  font-size: 150px;
+  color: #1E4FDB;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 25px;
+}
+
+.dis h1 {
+  font-size: 23px;
+  color: #111827;
+}
+
+.dis p {
+  font-size: 16px;
+  color: #7B8495;
+  font-weight: 500;
+  text-align: center;
+  line-height: 29px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-container button {
+  font-size: 15px;
+  color: 697181;
+  background-color: white;
+  border: 2px solid #E4E8EF;
+  padding: 7px 20px 6px;
+  border-radius: 11px;
+}
+
+.btn-container button:nth-child(1) {
+  color: white;
+  background-color: #1E4FDB;
+  border: none;
+}
